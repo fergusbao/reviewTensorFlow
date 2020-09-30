@@ -21,7 +21,7 @@ train = optimizer.minimize(loss)
 init = tf.initialize_all_variables()
 
 # Launch the graph.
-sess = tf.Session()
+sess = tf.compat.v1.Session()
 sess.run(init)
 
 # Fit the line.
